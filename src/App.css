@@ -1,0 +1,86 @@
+body {
+  background-color: #664a27;
+}
+
+.MenuBox {
+  width: 92vw;
+  height: 4.2vh;
+  background-color: #3c2612;
+  margin-left: 2.5vw;
+  margin-top: 14vh;
+  border-radius: 200vw;
+  position: absolute;
+  direction: rtl;
+}
+
+.MenuBox .Item {
+  display: flex;
+  overflow-x: auto;
+  position: relative;
+  bottom: 0.6vh;
+}
+.MenuBox .Item::-webkit-scrollbar {
+  width: 0px;
+}
+.LiItem {
+  display: flex;
+  width: 13vw;
+  text-align: left;
+  color: #dca01a;
+  font-size: 4vw;
+  font-weight: bold;
+  padding-right: 2.5em;
+}
+.LiItem:not(:first-child) {
+  border-right: 2px solid #dca01a;
+}
+
+.uLeftCorner {
+  position: absolute;
+  width: 40vw;
+  top: 20vh;
+  transform: scaleY(-1);
+  margin-left: -5px;
+}
+.uRightCorner {
+  position: absolute;
+  width: 40vw;
+  top: 20vh;
+  margin-left: 57vw;
+  transform: scaleX(-1) scaleY(-1);
+}
+.dLeftCorner {
+  position: absolute;
+  width: 40vw;
+  bottom: 0;
+  margin-left: -5px;
+  margin-bottom: 2.5vh;
+}
+.dRightCorner {
+  position: absolute;
+  width: 40vw;
+  margin-left: 57vw;
+  transform: scaleX(-1);
+  bottom: 0;
+  margin-bottom: 2.5vh;
+}
+
+.MenuCard {
+  /* width: 80vw; */
+  height: 10.5vh;
+  direction: rtl;
+  background-color: rgba(57, 39, 29, 0.5);
+}
+
+.mainBox {
+  position: absolute;
+  height: 67.5vh;
+  width: 84vw;
+  overflow: hidden;
+  overflow-y: scroll;
+  top: 25vh;
+  padding-left: 1vw;
+}
+.mainBox::-webkit-scrollbar {
+  width: 0;
+}
