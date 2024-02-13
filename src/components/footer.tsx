@@ -2,7 +2,7 @@ import { HStack, Link, Text } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <HStack position={"absolute"} bottom={"1.2vh"} marginLeft={"36vw"}>
+    <HStack position={"absolute"} bottom={"-0.5vh"} marginLeft={"36vw"}>
       <Text fontWeight={"bold"} fontSize={"2.5vw"} color={"solid black"}>
         Designed by
       </Text>
