@@ -10,11 +10,12 @@ class Category(models.Model):
        ordering = ['id']
 
 class Menu_Item(models.Model):
+    order_id = models.IntegerField(default=0)
     title = models.CharField(max_length=80)
     description = models.TextField(null=True, blank=True)
     price = models.CharField(max_length=80)
     category = models.ForeignKey(Category, on_delete=models.PROTECT, blank=True, null=True)
     picture = models.ImageField(null=True, blank=True)
-    
+
 
 

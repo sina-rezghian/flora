@@ -10,6 +10,7 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = ['id', 'title']
 class Menu_ItemSerializer(serializers.Serializer):
     id = serializers.IntegerField()
+    order_id = serializers.IntegerField()
     title = serializers.CharField(max_length=80)
     price = serializers.CharField(max_length=80)
     category = CategorySerializer()
