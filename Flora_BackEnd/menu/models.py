@@ -15,5 +15,6 @@ class Menu_Item(models.Model):
     price = models.CharField(max_length=80)
     category = models.ForeignKey(Category, on_delete=models.PROTECT, blank=True, null=True)
     picture = models.ImageField(null=True, blank=True)
+    
 
 
